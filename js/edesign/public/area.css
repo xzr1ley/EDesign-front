@@ -1,0 +1,60 @@
+/* .root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.Area{
+    height: 800px;
+    width: 1000px;
+    background-color: rgb(187, 187, 187);
+    display: block;
+    cursor: pointer;
+    margin: 30px auto 0;
+    position: absolute;
+    text-align: center;
+    margin-left: 300px;
+    resize: both;
+}
+
+
+
+.newimg{
+    resize: both;
+	overflow: auto;
+    position: absolute;
+    z-index: 100;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+
+.Area input{
+    display: none;
+}
+
+/* .alias{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+} */
+
+.draggable{
+    z-index: 1000;
+}
+
+.Area.drop{
+    height: 1000px;
+    width: 1000px;
+    background-color: rgb(132, 241, 132);
+}
+
+body {
+    background-color: #1E1E1E;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

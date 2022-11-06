@@ -1,0 +1,34 @@
+.InputTitle{
+    height: 100px;
+    width: 600px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+    cursor: pointer;
+    /* font-family: 'Montserrat', sans-serif; */
+    border: 1px solid #6E6E6E;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    z-index: 1000;
+}
+
+.txtAreaTitle{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    color: #252525;
+    background-color: transparent;
+    border: transparent;
+    font-size: 58px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+}
+
+.Input h1{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cube{
+    height: 100px;
+    width: 100px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+/* .App{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 2% auto 0;
+    flex-direction: column;
+} */
+
+
+.Biblioteka{
+    display: flex;
+    border: 2px solid #323232;
+    height:850px;
+    width: 300px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    float: right;
+    padding: 20px;
+    padding-top: 0px;
+    
+}
+
+.Title{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.Blocks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.space{
+    display: block;
+    height: 30px;
+    width: 100px;
+}
+
+/* .item{
+    height:100px;
+    width: 100px;
+    display: flex;
+    border: 5px solid cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: blanchedalmond;
+} */
+
+.area{
+    height: 700px;
+    width: 600px;
+    background-color: bisque;
+}
+
+::selection {
+    background: transparent;
+    }
+
