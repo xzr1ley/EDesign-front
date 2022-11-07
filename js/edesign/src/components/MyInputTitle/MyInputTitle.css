@@ -1,24 +1,24 @@
+*:focus {
+    outline: none;
+}
+
 .InputTitle{
-    height: 100px;
-    width: 600px;
     user-select: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    max-width: 250px;
+    /* flex-wrap: wrap; */
+    max-width: 400px;
     cursor: pointer;
-    /* font-family: 'Montserrat', sans-serif; */
-    border: 1px solid #6E6E6E;
-    background-color: antiquewhite;
-    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
     z-index: 1000;
+    position: relative;
 }
 
-.txtAreaTitle{
+.txt-area-input{
     display: flex;
     height: 100px;
-    width: 100%;
-    color: #252525;
+    width: 250px;
+    color: #6E6E6E;
     background-color: transparent;
     border: transparent;
     font-size: 58px;
@@ -26,9 +26,25 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     resize: none;
+    border: 1px solid #6E6E6E;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    max-height: 400px;
+    max-width: 400px;
+    scrollbar-width: none;
 }
 
 .Input h1{
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Cкрыть бар в других браузерах */
+.txt--title::-webkit-scrollbar{
+    display: none;
+
+}
+
+textarea::placeholder {
+    text-align: center;
 }

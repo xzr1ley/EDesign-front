@@ -1,25 +1,39 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import "./MyInputTitle.css"
-import "./MoveForText"
+import Draggable from 'react-draggable'
 
 const MyInputTitle = () => {
-    const [value, setValue] = useState()
+    const ref = useRef()
+    console.log(ref)
+
+    let switchBg = (el) => {
+        console.log(el.target)
+        el.target.style.backgroundColor = "transparent"
+        el.target.style.border = "none"
+        el.target.style.width = "400px"
+        el.target.addEventListener('keyup', e => {
+            let scH = e.target.scrollHeight;
+            el.target.style.height = `${scH}px`
+        })
+
+    }  
 
     
    
    
     return (
         <div>
-            <label className='InputTitle draggable'>
+            <Draggable>
+            <label className='InputTitle'  ref = {ref} onClick={ switchBg }>
                     <textarea 
-                    placeholder='Title'
+                    placeholder='Title...'
                     type="text"
-                    value={value}
-                    onChange={event => setValue(event.target.value)}
-                    className = "txtAreaTitle"
+                    className = "txt-area-title"
                     spellcheck="false"
                 />
+                
             </label>
+            </Draggable>
         </div>        
     )
 }

@@ -21,7 +21,7 @@ function unHighlightDropZone(event) {
     this.classList.remove('drop')
 }
 
-const Area = document.getElementById('Area');
+
 const input = document.getElementById('img');
 const area = document.getElementById('drop-zone');
 const dropFiles = document.getElementsByClassName('Area');
