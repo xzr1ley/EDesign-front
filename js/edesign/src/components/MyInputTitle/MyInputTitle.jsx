@@ -10,7 +10,7 @@ const MyInputTitle = () => {
         console.log(el.target)
         el.target.style.backgroundColor = "transparent"
         el.target.style.border = "none"
-        el.target.style.width = "400px"
+        el.target.style.width = "800px"
         el.target.addEventListener('keyup', e => {
             let scH = e.target.scrollHeight;
             el.target.style.height = `${scH}px`

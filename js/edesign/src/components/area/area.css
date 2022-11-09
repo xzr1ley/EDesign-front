@@ -1,0 +1,15 @@
+.drop-area{
+    width: 400px;
+    height: 400px;
+    border: 3px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.newimg{
+    width: 400px;
+    height: 400px;
+    pointer-events: none;
+}
