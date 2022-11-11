@@ -9,8 +9,7 @@ import MyInputTitle from './MyInputTitle/MyInputTitle';
 
 const Bibl = () => {
         const [items,setItem] = useState([{id: 1,item: <MyInputTitle/>, class:".123"}, {id: 2,item:"", class:"space"},
-         {id: 3,item:<MyInput/>, class:".123"}, {id: 4,item:"", class:"space"},
-        {id: 5,item:<MyInput/>, class:".123"}])
+         {id: 3,item:<MyInput/>, class:".123"}, {id: 4,item:"", class:"space"}])
 
 
     return (

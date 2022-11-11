@@ -1,1 +1,1 @@
-export const ADMIN_ROUTE = '/admin'
+export const fonts = ["Arial", "Montserrat","TimesNewRoman"]
