@@ -13,15 +13,23 @@ const MyInput = () => {
     const wrapperRef = useRef()
     const selectBtnRef = useRef()
     const optionsRef = useRef()
-    // const colorRef = useRef()
+    const colorRef = useRef()
     
     
 
-    // colorRef.current.addEventListener('change', () => {
-    //     let color = colorRef.current.value
-    //     txtRef.current.style.color = {color}
-    //     console.log(txtRef.current);
-    // })
+    function addFont(){
+        fonts.forEach(font => {
+            let li = `<li сlick="updateName(this)">${font}</li>`
+            optionsRef.current.insertAdjacentHTML('beforeend', li)
+        })
+        // onselect(window, updateName)
+    }
+
+    // addFont()
+
+    // function updateName(e) {
+    //     console.log(e.innerHTML);
+    // }
 
     const setBold = () => {
         txtRef.current.classList.toggle('bold')
@@ -52,6 +60,14 @@ const MyInput = () => {
         const inp = inputRef.current
         const tb = toolbarRef.current
 
+        colorRef.current.addEventListener('change', () => {
+            if (colorRef.current){
+            const color = colorRef.current.value
+            txtRef.current.style.color = color
+            console.log(txtRef.current.style);
+            console.log(colorRef.current.value)}
+        })
+
         inp.addEventListener('contextmenu', (ell) => {
             ell.preventDefault();
             tb.style.display = "flex"
@@ -64,16 +80,7 @@ const MyInput = () => {
         })
 
         
-        function addFont(){
-            fonts.forEach(font => {
-                let li = `<li onсlick="updateName(this)">${font}</li>`
-                optionsRef.current.insertAdjacentHTML('beforeend', li)
-            })
-            // onselect(window, updateName)
-        }
-
-        addFont()
-
+        
         // const updateName = (choosen) => {
         //     console.log(choosen);
         // }
@@ -116,7 +123,7 @@ const MyInput = () => {
                 <button className='txtstyler' onClick={setBold} ref={btnBold}> B</button>
                 <button className='txtstyler' onClick={setItalic} ref={btnItalic}> I </button>
                 <button className='txtstyler' onClick={setUnderline} ref={btnUnderline}> U </button>
-                <input type="color" />
+                <input type="color" ref={colorRef}/>
             </div>
             <label className='Input' ref = {inputRef} onClick={ switchBg } >
                 <textarea 
